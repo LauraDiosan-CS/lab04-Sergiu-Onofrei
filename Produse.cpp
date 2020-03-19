@@ -13,7 +13,6 @@ int main()
     Produs prod[100];
     int n;
     Repo r;
-    Produs g;
     do
     {
         cout << "Dati o optiune:0-Iesire\n1-Citire\n2-Afisare: ";
