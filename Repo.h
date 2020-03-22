@@ -9,7 +9,10 @@ public:
 	Repo();
 	~Repo();
 	int getSize();
+	void setSize(int newn);
 	void addProdus(Produs p);
 	Produs* getall();
-
+	void stergere(const Produs& p);
+	int cautare(const Produs& p);
+	void modificare(Produs& p);
 };

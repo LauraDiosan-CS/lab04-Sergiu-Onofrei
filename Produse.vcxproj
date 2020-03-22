@@ -150,11 +150,13 @@
     <ClCompile Include="Produs.cpp" />
     <ClCompile Include="Produse.cpp" />
     <ClCompile Include="Repo.cpp" />
+    <ClCompile Include="Service.cpp" />
     <ClCompile Include="Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Produs.h" />
     <ClInclude Include="Repo.h" />
+    <ClInclude Include="Service.h" />
     <ClInclude Include="Test.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -10,7 +10,7 @@ private:
 	char* data;
 public:
 	Produs();
-	Produs(char* nume, char* data,int pret);
+	Produs(char* nume, char* data, int pret);
 	Produs(const Produs& p);
 	~Produs();
 	int getPret();
