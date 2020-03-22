@@ -5,34 +5,35 @@
 using namespace std;
 int main()
 {   
-    test();
-    testRepo();
+    //test();
+    //testRepo();
     int x;
     bool val = true;
     int optiune;
     Produs prod[100];
-    int n;
+    Produs p;
+    char* nume = new char[50];
+    char* date = new char[50];
     Repo r;
     do
     {
-        cout << "Dati o optiune:0-Iesire\n1-Citire\n2-Afisare: ";
+        cout << "Dati o optiune:\n0-Iesire\n1-Citire\n2-Afisare: ";
         cin >> optiune;
         switch (optiune) {
         case 1: {
-            cout << "Dati numarul de produse: ";
-            cin >> n;
-            for (int i = 0;i < n;i++)
-            {
-                cout << "Dati un pret pentru produs: ";
-                cin >> x;
-                prod[i] = x;
-                r.addProdus(x);
-            }break;
-        }
+            cout << "Dati un nume de produs: ";
+            cin >> nume;
+            date = exceptiedata();
+            cout << "Dati un pret pentru produs: ";
+            cin >> x;
+            Produs p(nume, date, x);
+            r.addProdus(p);
+            break;}
         case 2: {
             cout << endl;
+            cout << "Produsele sunt: " << endl;
             for (int i = 0; i < r.getSize();i++) {
-                cout <<"Pretul este: "<< r.getall()[i];
+                cout <<" "<<r.getall()[i];
             };break;}
         case 0: {val = false;break;}
         }

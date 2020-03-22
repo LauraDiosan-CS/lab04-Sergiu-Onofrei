@@ -3,20 +3,21 @@
 #include "Repo.h"
 #include "Produs.h"
 #include <iostream>
-void test() {
-	int x = 15;
-	int y = 33;
-	Produs p = Produs();
-	assert(p.getPret() == 0);
-	Produs p1 = Produs(x);
-	assert(p1.getPret() == x);
-	p1.setPret(y);
-	assert(p1.getPret() == y);
-	Produs p3(45);
-	assert(p3.getPret() == 45);
-	cout << y<<endl;
-}
-
+#include <string.h>
+//void test() {
+//	int x = 15;
+//	int y = 33;
+//	Produs p = Produs();
+//	assert(p.getPret() == 0);
+//	Produs p1 = Produs(x);
+//	assert(p1.getPret() == x);
+//	p1.setPret(y);
+//	assert(p1.getPret() == y);
+//	Produs p3(45);
+//	assert(p3.getPret() == 45);
+//	cout << y<<endl;
+//}
+/*
 void testRepo() {
 	Repo r = Repo();
 	Produs prod[3];
@@ -31,4 +32,15 @@ void testRepo() {
 	assert(r.getSize() == 2);
 	assert(r.getall()[0] == prod[0]);
 	assert(r.getall()[1] == prod[1]);
+}
+*/
+void test()
+{
+	char* x = new char[50];
+	char* p;
+	strcpy_s(x, strlen("11/01/2600") + 1, "11/01/2600");
+	assert(validaredata(x) == 1);
+	cout << "da" << endl;
+	p = exceptiedata();
+	cout << p<<endl;
 }
