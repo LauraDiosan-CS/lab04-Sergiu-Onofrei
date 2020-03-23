@@ -30,12 +30,12 @@ int main()
             date = exceptiedata();
             cout << "Dati un pret pentru produs: ";
             cin >> x;
-            s.AddProdusService(nume, date, x);
+            s.AddProdus(nume, date, x);
             break;}
         case 2: {
             cout << endl;
             cout << "Produsele sunt: " << endl;
-            for (int i = 0; i < s.getSizeService();i++) {
+            for (int i = 0; i < s.getSize();i++) {
                 cout <<" "<<s.getAll()[i];
             };break;}
         case 3: {
@@ -46,7 +46,7 @@ int main()
             cout << "Dati un pret pentru produs: ";
             cin >> x1;
             Produs p1(nume1, date1, x1);
-            s.StergereProdusService(p1);
+            s.StergereProdus(p1);
             break;
         }
         case 4: {
@@ -57,7 +57,7 @@ int main()
             cout << "Dati un pret pentru produs: ";
             cin >> x1;
             Produs p1(nume1, date1, x1);
-            s.ModificareProdusService(p1);break;
+            s.ModificareProdus(p1);break;
         }
         case 0: {val = false;break;}
         }

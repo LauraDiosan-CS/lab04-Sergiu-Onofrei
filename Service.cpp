@@ -5,13 +5,13 @@ Service::Service() {
 Service::~Service() {
 	this->r.setSize(-1);
 }
-void Service::AddProdusService(char* n, char* d, int p) 
+void Service::AddProdus(char* n, char* d, int p) 
 {
 	Produs prod(n, d, p);
 	r.addProdus(prod);
 }
 
-int Service::getSizeService() {
+int Service::getSize() {
 	return this->r.getSize();
 }
 
@@ -19,13 +19,10 @@ Produs* Service::getAll() {
 	return this->r.getall();
 }
 
-void Service::StergereProdusService(Produs& p) {
+void Service::StergereProdus(Produs& p) {
 	this->r.stergere(p);
 }
 
-void Service::ModificareProdusService(Produs& p) {
-	for (int i = 0;i < Service::getSizeService();i++)
-		if (strcmp(getAll()[i].getNume(), p.getNume()) == 0)
-			r.modificare(p);
-
+void Service::ModificareProdus(Produs& p) {
+	this->r.modificare(p);
 }

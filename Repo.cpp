@@ -40,7 +40,7 @@ void Repo::stergere(const Produs& p)
 }
 
 void Repo::modificare(Produs& p) {
-	for (int i = 0;i < Repo::getSize();i++)
-		if (strcmp(Repo::getall()[i].getNume(), p.getNume()) == 0)
-			getall()[i] = p;
+	for (int i = 0;i <this->n;i++)
+		if (strcmp(this->produse[i].getNume(), p.getNume()) == 0)
+			this->produse[i] = p;
 }

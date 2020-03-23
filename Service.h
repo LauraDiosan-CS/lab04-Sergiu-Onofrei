@@ -6,10 +6,10 @@ private:
 public:
 	Service();
 	Produs* getAll();
-	int getSizeService();
-	void AddProdusService(char* n, char* d, int p);
-	void StergereProdusService(Produs& p);
-	void ModificareProdusService(Produs& p);
+	int getSize();
+	void AddProdus(char* n, char* d, int p);
+	void StergereProdus(Produs& p);
+	void ModificareProdus(Produs& p);
 	~Service();
 
 };
