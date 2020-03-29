@@ -9,7 +9,6 @@ public:
 	Repo();
 	~Repo();
 	int getSize();
-	void setSize(int newn);
 	void addProdus(Produs p);
 	Produs* getall();
 	void stergere(const Produs& p);

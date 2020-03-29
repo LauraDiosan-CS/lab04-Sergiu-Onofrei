@@ -17,10 +17,6 @@ int	Repo::getSize() {
 	return this->n;
 }
 
-void Repo::setSize(int newn) {
-	this->n = newn;
-}
-
 int Repo::cautare(const Produs& p) {
 	for (int i = 0;i < n;i++)
 		if (produse[i] == p) 
